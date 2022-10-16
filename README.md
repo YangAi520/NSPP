@@ -51,5 +51,9 @@ CUDA_VISIBLE_DEVICES=0 python generation.py
 Run using CPU:
 ```
 CUDA_VISIBLE_DEVICES=CPU python generation.py
+```
 
-## Pre:
+## Pre-trained model for VCTK dataset:
+You can also use pretrained models we provide to reconstruct the speech of any speaker in the VCTK dataset.<br/>
+[Download pretrained model](https://drive.google.com/drive/folders/1w8CkvQrYlJt7Am3P_-jDvNaScDEE6gm5?usp=sharing)<br/>
+Download the pre-trained model, write the model path to `checkpoint_file_load` in `config.json`, and finally run the generation code. 
