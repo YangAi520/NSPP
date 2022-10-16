@@ -28,3 +28,13 @@ For generation, we provide two ways to read data:
 (1) set `test_input_log_amp_dir` to `0` in `config.json` and write the test set waveform path to `test_input_wavs_dir` in `config.json`, the generation process will load the waveform, extract the log amplitude spectra, predict the phase spectra and reconstruct the waveform;
 
 (2) set `test_input_log_amp_dir` to `1` in `config.json` and write the log amplitude spectra (size is `(n_fft/2+1)*frames`) path to `test_input_log_amp_dir` in `config.json`, the generation process will dierctly load the log amplitude spectra, predict the phase spectra and reconstruct the waveform.
+
+## Training
+Run using GPU:
+```
+CUDA_VISIBLE_DEVICES=0 python train.py
+```
+Using TensorBoard to monitor the training process:
+```
+tensorboard --logdir=cp_APNet/logs
+```
