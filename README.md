@@ -40,3 +40,16 @@ tensorboard --logdir=cp_NSPP/logs
 ```
 An example of the training and validation curves in the tensorboard:<br>
 ![curve](./curve.bmp)
+
+## Generation:
+Write the checkpoint path to `checkpoint_file_load` in `config.json`.
+
+Run using GPU:
+```
+CUDA_VISIBLE_DEVICES=0 python generation.py
+```
+Run using CPU:
+```
+CUDA_VISIBLE_DEVICES=CPU python generation.py
+
+## Pre:
