@@ -36,5 +36,7 @@ CUDA_VISIBLE_DEVICES=0 python train.py
 ```
 Using TensorBoard to monitor the training process:
 ```
-tensorboard --logdir=cp_APNet/logs
+tensorboard --logdir=cp_NSPP/logs
 ```
+An example of the training and validation curves in the tensorboard:<br>
+![curve](./curve.bmp)
